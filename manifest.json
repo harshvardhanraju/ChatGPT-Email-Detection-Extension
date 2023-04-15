@@ -1,0 +1,12 @@
+{
+  manifest_version 2,
+  name ChatGPT Email Detector,
+  description A Chrome extension that detects email addresses in ChatGPT prompts and displays an error message.,
+  version 1.0,
+  content_scripts [
+    {
+      matches [httpschatgpt.com],
+      js [content_script.js]
+    }
+  ]
+}
